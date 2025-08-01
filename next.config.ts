@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       // API principal
       {
         protocol: 'https',
-        hostname: 'api.raspadinhabr.online',
+        hostname: 'api.sortenaraspada.site',
         port: '',
         pathname: '/uploads/**',
       },
