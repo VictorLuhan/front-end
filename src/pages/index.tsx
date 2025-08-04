@@ -158,17 +158,11 @@ export default function Home() {
       return prizeValue > maxValue ? prize : max;
     });
     
-    if (maxPrize.type === 'MONEY') {
-  const valor = parseFloat(maxPrize.value).toLocaleString('pt-BR', {
-    minimumFractionDigits: 2,
-  });
-
-  return (
-    <>
-      Ganhe até <span className="text-yellow-400 font-bold">R$ {valor}</span>
-    </>
-  );
-}
+   if (maxPrize.type === 'MONEY') {
+      return `Ganhe até R$ ${parseFloat(maxPrize.value).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+    } else {
+      return maxPrize.product_name || maxPrize.name || 'Prêmio especial';
+    }
 
   };
 
