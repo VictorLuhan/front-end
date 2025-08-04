@@ -159,10 +159,17 @@ export default function Home() {
     });
     
     if (maxPrize.type === 'MONEY') {
-      return `Ganhe até R$ ${parseFloat(maxPrize.value).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
-    } else {
-      return maxPrize.product_name || maxPrize.name || 'Prêmio especial';
-    }
+  const valor = parseFloat(maxPrize.value).toLocaleString('pt-BR', {
+    minimumFractionDigits: 2,
+  });
+
+  return (
+    <>
+      Ganhe até <span className="text-yellow-400 font-bold">R$ {valor}</span>
+    </>
+  );
+}
+
   };
 
   // Função para filtrar cards
