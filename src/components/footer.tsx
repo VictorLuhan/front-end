@@ -97,21 +97,12 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* Made with love by Brazilians */}
-          <div className="flex justify-center mt-4">
-            <div className="flex items-center gap-2 text-neutral-400">
-              <span className="text-xs">Feito com</span>
-              <span className="text-red-400 text-sm">❤️</span>
-              <span className="text-xs">por brasileiros</span>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom Footer */}
         <div className="border-t border-neutral-800/50 pt-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-neutral-500 text-xs sm:text-sm text-center sm:text-left">
-              © 2025 {process.env.NEXT_PUBLIC_APP_NAME} - Todos os direitos reservados. | CNPJ: 65.164.519/0001-50
+              © 2025 {process.env.NEXT_PUBLIC_APP_NAME} - Todos os direitos reservados. | CNPJ: 65.164.519/0001-30
             </p>
             <div className="flex items-center gap-4">
               <span className="text-neutral-500 text-xs">Jogue com responsabilidade</span>
@@ -120,6 +111,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );
