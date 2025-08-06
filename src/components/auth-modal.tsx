@@ -234,7 +234,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
             {/* Header */}
             <div className="mb-8 flex flex-col items-center">
             <Image
-                 src="logo.png" // depende do teu arquivo
+                 src= "/logo.png" // depende do teu arquivo
                  alt="Logo"
                  width={600} // ajusta o tamanho conforme tua logo
                  height={200}
