@@ -232,17 +232,21 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
             </button>
 
             {/* Header */}
-            <div className="mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent mb-2">
-                {activeTab === 'login' ? 'Bem-vindo de volta!' : 'Crie sua conta'}
-              </h2>
-              <p className="text-neutral-400 text-sm">
-                {activeTab === 'login' 
-                  ? 'Entre na sua conta e continue jogando' 
-                  : 'Registre-se e comece a ganhar prêmios reais'
-                }
-              </p>
-            </div>
+            <div className="mb-8 flex flex-col items-center">
+  <              Image
+                 src="logo.png" // depende do teu arquivo
+                 alt="Logo"
+                 width={600} // ajusta o tamanho conforme tua logo
+                 height={200}
+                 className="mb-4"
+                 /><h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent mb-2">
+                    Bem-vindo de volta!
+                  </h2>
+                  <p className="text-neutral-400 text-sm text-center">
+                      Entre na sua conta e continue jogando
+                 </p>
+              </div>
+
 
             {/* Tabs */}
             <div className="flex mb-6 bg-neutral-800/50 rounded-lg p-1">
