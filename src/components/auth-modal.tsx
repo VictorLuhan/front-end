@@ -233,13 +233,14 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
 
             {/* Header */}
             <div className="mb-8 flex flex-col items-center">
-  <              Image
+            <Image
                  src="logo.png" // depende do teu arquivo
                  alt="Logo"
                  width={600} // ajusta o tamanho conforme tua logo
                  height={200}
                  className="mb-4"
-                 /><h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent mb-2">
+             />
+                 <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-neutral-300 bg-clip-text text-transparent mb-2">
                     Bem-vindo de volta!
                   </h2>
                   <p className="text-neutral-400 text-sm text-center">
