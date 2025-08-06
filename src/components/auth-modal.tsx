@@ -208,7 +208,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-neutral-900 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[95vh] md:max-h-[90vh] overflow-y-auto border border-neutral-700">
-        <div className="flex flex-col md:flex-row min-h-[400px] md:min-h-[500px]">
+        <div className="flex flex-col md:flex-row">
           {/* Left Side - Banner Image */}
           <div className="hidden">
             <Image
