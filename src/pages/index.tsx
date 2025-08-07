@@ -259,10 +259,9 @@ export default function Home() {
             onClick={() => setCurrentSlide(index)}
             className={`transition-all duration-300 ${
               index === currentSlide
-               ? "w-6 h-1.5 bg-green-500 rounded-full" // Ativo
-               : "w-2 h-2 bg-white/50 rounded-full hover:bg-white/70" // Inativo
-           }`}
-
+                ? `w-6 h-1.5 ${getAppColor()} rounded-full` // Ponto ativo alongado azul
+                : "w-1.5 h-1.5 bg-white/50 rounded-full hover:bg-white/70" // Pontos inativos menores
+            }`}
           />
         ))}
       </div>
