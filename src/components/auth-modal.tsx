@@ -216,6 +216,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
               alt="Banner"
               fill
               className="object-cover object-center"
+              layout="responsive"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/20 to-neutral-900/20" /> 
@@ -236,6 +237,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
             <Image
                  src= "/logo.png" // depende do teu arquivo
                  alt="Logo"
+                 layout="responsive"
                  width={600} // ajusta o tamanho conforme tua logo
                  height={200}
                  className="mb-4"
