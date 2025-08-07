@@ -210,7 +210,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
       <div className="bg-neutral-900 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[95vh] md:max-h-[90vh] overflow-y-auto border border-neutral-700">
         <div className="flex flex-col md:flex-row">
           {/* Left Side - Banner Image */}
-          <div className="hidden">
+          <div className="">
             <Image
               src="/banner_modal.webp"
               alt="Banner"
