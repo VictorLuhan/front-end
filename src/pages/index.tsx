@@ -222,7 +222,10 @@ export default function Home() {
     <Header/>
     
     {/* Banner Carousel */}
-    <div className="bg-neutral-900 mt-4 relative w-full max-w-6xl lg:max-w-7xl mx-auto h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden px-2 sm:px-4 lg:px-0">
+  <div className="bg-neutral-900 mt-4 relative w-full max-w-6xl mx-auto 
+  h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] 
+  rounded-lg overflow-hidden"> 
+
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full "
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
