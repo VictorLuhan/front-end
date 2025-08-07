@@ -222,9 +222,8 @@ export default function Home() {
     <Header/>
     
     {/* Banner Carousel */}
-  <div className="bg-neutral-900 mt-4 relative w-full max-w-6xl mx-auto 
-  h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] 
-  rounded-lg overflow-hidden"> 
+  <div  className="bg-neutral-900 mt-4 relative w-full max-w-3xl mx-auto h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] rounded-xl overflow-hidden shadow-md">
+
 
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full "
@@ -242,8 +241,9 @@ export default function Home() {
           <Image
                 src={banner}
                 alt={`Banner ${i + 1}`}
-            fill
-            className="object-cover"
+                className="w-full h-full object-contain"
+                width={1600}
+                height={400}
                 priority={i === 0}
           />
         </div>
@@ -259,9 +259,10 @@ export default function Home() {
             onClick={() => setCurrentSlide(index)}
             className={`transition-all duration-300 ${
               index === currentSlide
-                ? `w-6 h-1.5 ${getAppColor()} rounded-full` // Ponto ativo alongado azul
-                : "w-1.5 h-1.5 bg-white/50 rounded-full hover:bg-white/70" // Pontos inativos menores
-            }`}
+               ? "w-6 h-1.5 bg-green-500 rounded-full" // Ativo
+               : "w-2 h-2 bg-white/50 rounded-full hover:bg-white/70" // Inativo
+           }`}
+
           />
         ))}
       </div>
