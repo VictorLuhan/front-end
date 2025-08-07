@@ -232,13 +232,13 @@ export default function Home() {
       >
         {bannersLoading ? (
           Array(3).fill(0).map((_, i) => (
-            <div key={i} className="w-full h-full flex-shrink-0 relative">
+            <div key={i} className="relative w-full aspect-[16/9]">
               <div className="absolute inset-0 bg-neutral-800 animate-pulse rounded-lg" />
         </div>
           ))
         ) : (
           banners.map((banner, i) => (
-            <div key={i} className="w-full h-full flex-shrink-0 relative">
+            <div key={i} className="relative w-full aspect-[16/9]">
           <Image
                 src={banner}
                 alt={`Banner ${i + 1}`}
