@@ -211,15 +211,6 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
         <div className="flex flex-col md:flex-row">
           {/* Left Side - Banner Image */}
           <div className="">
-            <Image
-              src="/banner_modal.webp"
-              alt="Banner"
-              fill
-//            className="object-contain object-center w-full h-full max-h-[90vh]"//
-
-              layout="responsive"
-              priority
-            />
             <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/20 to-neutral-900/20" /> 
           </div>
 
