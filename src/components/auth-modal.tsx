@@ -211,7 +211,6 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
         <div className="flex flex-col md:flex-row">
           {/* Left Side - Banner Image */}
           <div className="">
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/20 to-neutral-900/20" /> 
           </div>
 
           {/* Right Side - Forms */}
