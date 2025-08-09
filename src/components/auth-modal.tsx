@@ -215,7 +215,8 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
               src="/banner_modal.webp"
               alt="Banner"
               fill
-              className="object-cover object-center"
+//            className="object-contain object-center w-full h-full max-h-[90vh]"//
+
               layout="responsive"
               priority
             />
